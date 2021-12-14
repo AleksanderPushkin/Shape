@@ -15,10 +15,10 @@ namespace Shape.Tests
             var circle = new Circle(10);
 
             //Act
-            var circleSquare = circle.Area();
+            var result = circle.Area();
 
             //Assert
-            Assert.AreEqual(314.15926535897931, circleSquare);
+            Assert.AreEqual(314.15926535897931, result);
         }
         [TestMethod()]
         public void GetAreaCircleNegativeValueTest()
@@ -34,10 +34,10 @@ namespace Shape.Tests
             var triangle = new Triangle(3, 4, 5);
 
             //Act
-            var triangleSquare = triangle.Area();
+            var result = triangle.Area();
 
             //Assert
-            Assert.AreEqual(6, triangleSquare);
+            Assert.AreEqual(6, result);
         }
         [TestMethod()]
         public void TriangleNegativeSidesTest()
@@ -47,13 +47,13 @@ namespace Shape.Tests
 
         }
         [TestMethod()]
-        public void NineFor3x3SquareTest()
+        public void NineFor4x4SquareTest()
         {
-            var square = new Square(3);
+            var square = new Square(4);
 
             var result = square.Area();
 
-            Assert.AreEqual(9, result);
+            Assert.AreEqual(16, result);
 
         }
 
